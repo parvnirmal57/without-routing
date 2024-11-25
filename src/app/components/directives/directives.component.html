@@ -1,0 +1,23 @@
+<p>directives works!</p>
+<div [ngClass]="{'active': isActive, 'highlight': isHighlighted}">
+    Dynamicly styled div using Class Directives
+</div>
+<button (click)="toggleActive()">Toggle Active</button>
+<button (click)="toggleHighlight()">Toggle Highlight</button>
+<div [ngStyle]="{'color': textColor, 'font-size.px': fontSize}">
+    Dynamic styling with ngStyle!
+</div>
+<div *ngIf="isVisible">
+    <p>The component is Visible</p>
+</div>
+<button (click)="toggleVisibility()">Click here for *ngIf</button>
+<ul>
+    <li *ngFor="let item of items">{{item}}</li>
+</ul>
+<div [ngSwitch]="color">
+    <p *ngSwitchCase="'red'">The color is Red using *ngSwitch</p>
+    <p *ngSwitchCase="'blue'">The color is Blue using *ngSwitch</p>
+    <p *ngSwitchCase="'green'">The color is Green  using *ngSwitch</p>
+    <p *ngSwitchDefault>The color is not recognized using *ngSwitch</p>
+
+</div>

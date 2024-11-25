@@ -1,0 +1,10 @@
+<p>data-binding works!</p>
+<img [src]="src">
+<button [disabled]='bool'>Disabled Propery binding</button>
+<p [class.active]="isActive">Class biding</p>
+<p [style.color]="textColor">Style binding</p>
+<button (click)="onClick()">Click here for event biding</button>
+<h3>{{title}}</h3>
+<input [(ngModel)]="username" placeholder="Enter your username">
+<p>Your username for two way data binding is: {{username}}</p>
+<hr>
